@@ -19,9 +19,9 @@ export default function App() {
     setLoading(true);
     setPrediction("");
 
-    // Dynamic prompts based on the selected mode
-    const promptToxic = `Be an extremely toxic, mystical, ironic, and sarcastic astrologer. Generate a very short, mean (but funny) prediction/description for the zodiac ${selectedZodiac} in colocvial language. Respond in English.`;
-    const promptPositive = `Be an uplifting, wise, compassionate, and highly motivational spiritual astrologer. Generate a very short, inspiring, and beautiful weekly prediction full of good vibes for the zodiac ${selectedZodiac} in friendly language. Focus on personal growth and positive energy. Use markdown formatting. Respond in English.`;
+    // Dynamic prompts based on the selected mode - you can customize locally but don't push those changes to the repo as I want to keep it consistent for users that clone it locally for personal uses only.
+    const promptToxic = `Be an extremely toxic, mystical, ironic, and sarcastic astrologer. Generate a very short, mean (but funny) prediction/description for the zodiac ${selectedZodiac} in colocvial language, easy to understand. Respond in English. Look at planets position and depending on that generate the predicting. Use markdown formatting.`;
+    const promptPositive = `Be an uplifting, wise, compassionate, and highly motivational spiritual astrologer. Generate a very short, inspiring, and beautiful weekly prediction full of good vibes for the zodiac ${selectedZodiac} in colocvial language, easy to understand. Focus on personal growth and positive energy. Use markdown formatting. Respond in English. Look at planets position and depending on that generate the predicting. Use markdown formatting.`;
     
     try {
       const response = await ai.models.generateContent({
