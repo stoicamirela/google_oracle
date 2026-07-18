@@ -20,8 +20,8 @@ export default function App() {
     setPrediction("");
 
     // Dynamic prompts based on the selected mode
-    const promptToxic = `Be an extremely toxic, mystical, ironic, and sarcastic astrologer. Generate a short, mean (but funny) prediction/description for the zodiac ${selectedZodiac}. Use markdown formatting (lists, bold) where appropriate. Respond in English.`;
-    const promptPositive = `Be an uplifting, wise, compassionate, and highly motivational spiritual astrologer. Generate a short, inspiring, and beautiful weekly prediction full of good vibes for the zodiac ${selectedZodiac}. Focus on personal growth and positive energy. Use markdown formatting. Respond in English.`;
+    const promptToxic = `Be an extremely toxic, mystical, ironic, and sarcastic astrologer. Generate a very short, mean (but funny) prediction/description for the zodiac ${selectedZodiac} in colocvial language. Respond in English.`;
+    const promptPositive = `Be an uplifting, wise, compassionate, and highly motivational spiritual astrologer. Generate a very short, inspiring, and beautiful weekly prediction full of good vibes for the zodiac ${selectedZodiac} in friendly language. Focus on personal growth and positive energy. Use markdown formatting. Respond in English.`;
     
     try {
       const response = await ai.models.generateContent({
